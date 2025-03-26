@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Shanzay</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+        .project {
+            background: #fff;
+            padding: 1rem;
+            margin: 1rem auto;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        form input, form textarea, form button {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background: #333;
+            color: white;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 10px;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .contact-buttons {
+            margin-top: 20px;
+        }
+        .contact-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-buttons a.email {
+            background: #0073e6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>"Samiullah"</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Building responsive and modern websites with HTML, CSS, and JavaScript.</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="sami.jpg" alt="Profile Image" width="200">
+        <p>I am a web developer skilled in HTML, CSS, and JavaScript. I create responsive and user-friendly websites.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Responsive Design</li>
+            <li>JavaScript Applications</li>
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of project 1.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Reach out to me via WhatsApp or Email</p>
+        <div class="contact-buttons">
+            <a href="https://wa.me/+923107522723" target="_blank">WhatsApp</a>
+            <a href="mailto:benstoke776@gmail.com" class="email">Email Me</a>
+        </div>
+        <table border="1" align="center">
+            <tr>
+                <th>Contact Method</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>WhatsApp</td>
+                <td id="whatsapp-number">Loading...</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td id="email-address">Loading...</td>
+            </tr>
+        </table>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Shanzay. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="mailto:benstoke776@gmail.com">Email Me</a>
+            <a href="https://wa.me/+923107522723" target="_blank">WhatsApp</a>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById("whatsapp-number").innerText = "+923107522723";
+        document.getElementById("email-address").innerText = "benstoke776@gmail.com";
+    </script>
+</body>
+</html>
